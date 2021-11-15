@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.question {
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: 2px solid black;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.answer {
+  margin: auto;
+
+  width: 50%;
+  padding: auto;
+}
+
+.active,
+.question:hover {
+  background-color: #f9f9f9;
+}
+
+.answer {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.question:after {
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
